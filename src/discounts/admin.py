@@ -28,5 +28,5 @@ class DiscountAdmin(admin.ModelAdmin):
             book.price_discount = total_price
             book.save()
 
-        return book.price_discount
+            return book.price_discount
 

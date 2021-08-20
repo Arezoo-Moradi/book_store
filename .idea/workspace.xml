@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbc839f8-96ff-49dc-99ec-db335ff412f7" name="Default Changelist" comment="" />
+    <list default="true" id="cbc839f8-96ff-49dc-99ec-db335ff412f7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/Book/images/OIP.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_bookstore/.idea/bookstore-venv.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/book_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/book_store/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/book_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/book_store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/books/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/books/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/discounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discounts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/orders/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/migrations/0002_alter_order_discount.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/orders/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/orders/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1wYjN2iFHgiPI4iHZFgcJhQT6Ky" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,13 +49,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django-ecommerce-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Public\Documents\FinalProjectDjango\src\static\Book\images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -32,11 +72,48 @@
       <option name="presentableId" value="Default" />
       <updated>1628642372660</updated>
       <workItem from="1628677180849" duration="13106000" />
-      <workItem from="1628700385367" duration="613000" />
+      <workItem from="1628700385367" duration="4981000" />
+      <workItem from="1628790391876" duration="28000" />
+      <workItem from="1628793554074" duration="1423000" />
+      <workItem from="1628978862994" duration="1440000" />
+      <workItem from="1629113093752" duration="7771000" />
+      <workItem from="1629146192995" duration="51000" />
+      <workItem from="1629153093641" duration="594000" />
+      <workItem from="1629189582766" duration="596000" />
+      <workItem from="1629192829259" duration="1284000" />
+      <workItem from="1629194188596" duration="872000" />
+      <workItem from="1629196607680" duration="1059000" />
+      <workItem from="1629216278998" duration="514000" />
+      <workItem from="1629216801193" duration="90000" />
+      <workItem from="1629217084744" duration="3446000" />
+      <workItem from="1629298809807" duration="5245000" />
+      <workItem from="1629379649656" duration="231000" />
+      <workItem from="1629379951041" duration="3251000" />
+      <workItem from="1629383363820" duration="21870000" />
+      <workItem from="1629451649435" duration="5635000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1628705308593</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1628705308593</updated>
+    </task>
+    <task id="LOCAL-00002" summary="second commit">
+      <created>1628705840622</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628705840622</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
   </component>
 </project>
