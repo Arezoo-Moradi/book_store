@@ -1,0 +1,28 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'Book/css/base.css'%}">
+{% endblock css%}
+{% block content %}
+    <section class="row" style="margin-top:20px">
+
+             <div class="col-sm-12 col-md-6 p-5" id="box-book" >
+            <a href="#">{{ order.id |capfirst }}</a>
+                 <br>
+                 <span > نویسنده : {{ order.total_price }} </span>
+                 <br>
+
+          </div>
+        <img class="col-sm-12 col-md-6 p-0" src="{% static 'Book/images/harrypoter.jpg'%}" alt=" image of this book">
+        <br>
+        <div>
+
+                <a href="{{ book.get_add_to_order_url  }}" class="btn btn-primary btn-md my-0 p">
+              اضافه کردن به سبد خرید
+              <i class="fas fa-shopping-cart ml-1"></i>
+            </a>
+        </div>
+
+
+    </section>
+{% endblock content %}

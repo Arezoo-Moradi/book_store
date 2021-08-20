@@ -1,0 +1,30 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'Book/css/base.css'%}">
+{% endblock css%}
+
+{% block content %}
+{% if searched %}
+<br>
+    <div class="card w-50" >
+    <div class="card-header">
+        <h5 class="card-title">
+        <span> عبارت مورد جستجو:</span>
+        <span style="color:red">{{ searched}}</span></h5> </div>
+    <br>
+    {% for book in books %}
+        <div class="card-title" id="searchbarbook">
+       <a href="{% url 'book_detail' book.pk %}"> {{book}}</a>
+            </div><br>
+          {% empty %}
+           <div class="card-title" >
+                <p> کتابی پیدا نشد.</p>
+            </div><br>
+    {% endfor %}
+{% else %}
+        </div>
+    <h1> عبارتی وارد نشده است.</h1>
+{% endif%}
+
+{% endblock content %}

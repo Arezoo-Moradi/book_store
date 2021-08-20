@@ -1,0 +1,19 @@
+body{
+    text-align:right !important;
+}
+#box-book{
+  background:#99FF66 !important;
+}
+
+#box-book a{
+    text-decoration:None;
+    color:black !important;
+    font-weight:bold;
+}
+#ordritembtn a{
+    text-align:left ;
+}
+#searchbarbook a{
+    text-decoration:None !important;
+    color:green !important;
+}
