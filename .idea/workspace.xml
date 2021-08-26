@@ -1,41 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbc839f8-96ff-49dc-99ec-db335ff412f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/Book/images/OIP.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/venv_bookstore/.idea/bookstore-venv.iml" afterDir="false" />
+    <list default="true" id="cbc839f8-96ff-49dc-99ec-db335ff412f7" name="Default Changelist" comment="thired commit">
+      <change beforePath="$PROJECT_DIR$/.idea/FinalProjectDjango.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FinalProjectDjango.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/account/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/book_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/book_store/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/book_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/book_store/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/apps.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/books/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/books/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/books/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/books/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/forms.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/customers/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/customers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/customers/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/discounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/discounts/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/customers/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discounts/apps.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/discounts/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/orders/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discounts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/discounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/forms.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/orders/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orders/migrations/0002_alter_order_discount.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orders/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/orders/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/orders/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/orders/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/templatetags/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/templatetags/multifor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/orders/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/requirment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staff/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staff/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staff/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staff/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staff/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staff/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staff/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/staff/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/Book/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/static/Book/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/static/Book/images/OIP.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/books/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/books/book-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/books/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/books/order_items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/books/search_bar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/customer/Email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/customer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/customer/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/customer/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/orders/finalrecord.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/orders/order-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/orders/orderlist.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,11 +91,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django-ecommerce-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -60,7 +105,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Public\Documents\FinalProjectDjango\src\templates\account" />
       <recent name="C:\Users\Public\Documents\FinalProjectDjango\src\static\Book\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Public\Documents\FinalProjectDjango\src\books" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,7 +139,23 @@
       <workItem from="1629379649656" duration="231000" />
       <workItem from="1629379951041" duration="3251000" />
       <workItem from="1629383363820" duration="21870000" />
-      <workItem from="1629451649435" duration="5635000" />
+      <workItem from="1629451649435" duration="7855000" />
+      <workItem from="1629563123250" duration="708000" />
+      <workItem from="1629574511675" duration="8445000" />
+      <workItem from="1629622170839" duration="19667000" />
+      <workItem from="1629656742186" duration="3673000" />
+      <workItem from="1629716783862" duration="1125000" />
+      <workItem from="1629720307414" duration="7120000" />
+      <workItem from="1629731265113" duration="14139000" />
+      <workItem from="1629785294055" duration="13948000" />
+      <workItem from="1629810642665" duration="8050000" />
+      <workItem from="1629827162415" duration="6470000" />
+      <workItem from="1629839016711" duration="1192000" />
+      <workItem from="1629879770160" duration="2519000" />
+      <workItem from="1629916246409" duration="4480000" />
+      <workItem from="1629962513508" duration="61000" />
+      <workItem from="1629962607036" duration="22162000" />
+      <workItem from="1629992096708" duration="4250000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1628705308593</created>
@@ -106,7 +171,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628705840622</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="thired commit">
+      <created>1629473639179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629473639179</updated>
+    </task>
+    <task id="LOCAL-00004" summary="thired commit">
+      <created>1629474888363</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1629474888363</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +193,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="thired commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="thired commit" />
   </component>
 </project>
