@@ -1,0 +1,22 @@
+{% extends "customer/base.html" %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'Book/css/base.css'%}">
+{% endblock css%}
+{% block content %}
+      <div>
+          <h1>آدرس</h1>
+          <div class=" row justify-content-end ">
+           {% for address in addresses %}
+             <div class=" card-header col-2 p-5 m-5" id="box-book" >
+            <a href="{% url 'update_address' address.pk %}">{{ address.user |capfirst }}</a>
+                 <br>
+                 <span >  {{ address.province }} </span>
+                  <br>
+                <span>{{ address.city}}  </span>
+                  <br>
+             </div>
+          {% endfor %}
+          </div>
+      </div>
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'Book/css/base.css'%}">
+{% endblock css%}
+{% block content %}
+      <div>
+          <h1>پر فروش ترین</h1>
+          <div class=" row justify-content-end ">
+           {% for book in object_list %}
+             <div class=" card-header col-2 p-5 m-5" id="box-book" >
+            <a href="{% url 'book_detail' book.slug %}">{{ book.title |capfirst }}</a>
+                 <br>
+                 <span > نویسنده : {{ book.author }} </span>
+                  <br>
+                <span>{{ book.price}} : قیمت </span>
+                  <br>
+                <span>{{ book.price_discount }} : قیمت با تخفیف </span>
+                 </div>
+          {% endfor %}
+          </div>
+      </div>
+{% endblock content %}

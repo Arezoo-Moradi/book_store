@@ -1,0 +1,20 @@
+{% extends 'customer/base.html' %}
+{% load static %}
+
+
+{% block title %}Edit Profile{% endblock title %}
+
+{% block content %}
+    <div class="row">
+        <br>
+        <br>
+        <div class="col-8">
+            <h2>ویرایش اطلاعات</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">ویرایش اطلاعات</button>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

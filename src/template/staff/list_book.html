@@ -1,0 +1,17 @@
+{% extends "staff/base.html" %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'Staff/css/base.css'%}">
+{% endblock css%}
+{% block content %}
+      <div>
+          <div class=" row justify-content-end ">
+           {% for book in object_list %}
+             <div class=" card-header col-2 p-5 m-5" id="box-book" >
+            <a href="{% url 'update_book' book.id %}">{{ book.title |capfirst }}</a>
+                 <br>
+             </div>
+          {% endfor %}
+          </div>
+      </div>
+{% endblock content %}

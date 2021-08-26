@@ -1,0 +1,59 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'Book/css/base.css'%}">
+{% endblock css%}
+{% block content %}
+  <main>
+    <div class="container">
+
+    <div class="table-responsive text-nowrap">
+        <br>
+    <h2>لیست خرید </h2>
+        <br>
+        <br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">وضعیت</th>
+            <th scope="col">قیمت با تخفیف</th>
+            <th scope="col">تعداد</th>
+            <th scope="col">قیمت</th>
+            <th scope="col">عنوان کتاب</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>{{status}}</td>
+            <td >{{ discount }}
+            </td>
+            <td>{{quantity}}</td>
+            <td>{{ total }}</td>
+            <td>{{ order }}</td>
+
+        </tr>
+
+        </tbody>
+    </table>
+        <br>
+            <form class="d-flex" method="post" action="{% url 'Complete' %}">
+            {% csrf_token %}
+            <input class="form-control me2" type="search" placeholder="code" aria-label="search"
+            name="code" id="autocomplete">
+            <button class="btn btn-outline-secondary" type="submit" id="btnClick">اعمال تخفیف</button>
+        </form>
+        <br>
+        <a class='btn btn-primary float-right' id="ordritembtn" href="{% url 'CH-ADD' %}"
+        style="text-align:left">تعیین ادرس </a>
+
+    </div>
+
+    </div>
+  </main>
+
+{% endblock content %}
+
+{% block js%}
+      <script src="{% static 'Book/JS/main.js'%}"></script>
+{% endblock js%}

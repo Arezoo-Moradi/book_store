@@ -1,0 +1,18 @@
+{% extends "staff/base.html" %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'Staff/css/base.css'%}">
+{% endblock css%}
+{% block content %}
+      <div>
+          <h1>پر فروش ترین</h1>
+          <div class=" row justify-content-end ">
+           {% for cat in object_list %}
+             <div class=" card-header col-2 p-5 m-5" id="box-book" >
+            <a href="{% url 'update_cat' cat.id %}">{{ cat.name |capfirst }}</a>
+                 <br>
+             </div>
+          {% endfor %}
+          </div>
+      </div>
+{% endblock content %}

@@ -1,0 +1,45 @@
+{% extends "books/base.html" %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'Book/css/base.css'%}">
+{% endblock css%}
+{% block content %}
+    <section class="row" style="margin-top:20px">
+
+             <div class="col-sm-12 col-md-6 p-5" id="box-book" >
+            <a href="#">{{ book.title |capfirst }}</a>
+                 <br>
+                 <span > نویسنده : {{ book.author }} </span>
+                 <br>
+                 {% for cat in book.categories.all %}
+                 <span> دسته: {{cat.name}} </span>
+                 {% endfor%}
+                  <br>
+                 <span>{{book.inventory}} : موجودی</span>
+                 <br>
+                <span>{{ book.price}} : قیمت </span>
+                  <br>
+                <span>{{ book.discount_price }} : قیمت با تخفیف </span>
+                    <br>
+                 {% for msg in messages %}
+                <div class="alert alert-{{massage.tags}} m-2" id="msg" role="alert">
+                    {{msg}}
+                </div>
+                 {% endfor %}
+          </div>
+        <img class="col-sm-12 col-md-6 p-0" src="{% static 'Book/images/harrypoter.jpg'%}" alt=" image of this book">
+        <br>
+
+         <div style="text-align:left">
+
+                <a href="{{ book.get_add_to_cart_url  }}" class="btn btn-success btn-md my-0 p">
+              اضافه کردن به سبد خرید
+              <i class="fas fa-shopping-cart ml-1"></i>
+            </a>
+        </div>
+
+    </section>
+{% endblock content %}
+{% block js%}
+      <script src="{% static 'Book/JS/main.js'%}"></script>
+{% endblock js%}

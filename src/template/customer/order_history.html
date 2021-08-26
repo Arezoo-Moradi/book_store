@@ -1,0 +1,18 @@
+{% extends "customer/base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="card m-2">
+        {% for ord in order %}
+            <div class="card-header m-2">
+                    <a href="#"><p>   شماره سفارش:{{  ord.id }}</p></a>
+                    <p>   تاریخ سفارش:{{  ord.time }}</p>
+                    <p>   وضعیت سفارش:{{  ord.status }}</p>
+                    <p>   قیمت کل سفارش:{{  ord.total_price }}</p>
+                    <p>   آدرس ارسال:{{  ord.customer_address }}</p>
+
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,34 @@
+{% extends 'books/base.html' %}
+{% block title %}ADDRESS{% endblock title %}
+{% block content %}
+<section class="row" style="margin-top:20px">
+<div class="col-sm-12 col-md-6 p-5" >
+<h4>Categories</h4>
+{% for add in addresses %}
+<div class="card">
+    <div class="card-header">
+
+    <li><a href="{%url 'record' add.pk %}">{{ add.province }}</a></li>
+        <p>{{add.city}}</p>
+        <p>{{add.postal_code}}</p>
+        <p>{{add.full_address}}</p>
+    </div>
+    </div>
+{% endfor %}
+ </div>
+ <div class="col-sm-12 col-md-6 p-5" >
+<h1>New Address</h1>
+<form action="{%url 'record' 1  %}" method="post">
+        {% csrf_token %}
+    <input type="text" name="province" class="form-control" id="inputAddress1" placeholder="province">
+    <input type="text" name="city" class="form-control" id="inputAddress2" placeholder="city">
+    <input type="text" name="postal_code" class="form-control" id="inputAddress3" placeholder="postal_code">
+    <input type="text" name="full_address" class="form-control" id="inputAddress4" placeholder="full_address">
+<br>
+        <button class="btn btn-success ml-2" type="submit">Save</button>
+    </form>
+
+</div>
+
+</section>
+{% endblock content %}

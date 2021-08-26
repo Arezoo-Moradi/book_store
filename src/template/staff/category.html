@@ -1,0 +1,37 @@
+{% extends 'staff/base.html' %}
+{% block title %}CATEGORIES{% endblock title %}
+{% block content %}
+<section class="row" style="margin-top:20px">
+<div class="col-sm-12 col-md-6 p-5" >
+<h4>Categories</h4>
+{% for category in category_list1 %}
+<div class="card">
+    <div class="card-header">
+
+    <li><a href="#">{{ category.name }}</a></li>
+    </div>
+    </div>
+{% endfor %}
+<h4>Categories with no task</h4>
+{% for category in category_list0 %}
+<div class="card">
+    <div class="card-header">
+
+    <li><a href="#">{{ category.name }}</a></li>
+    </div>
+    </div>
+{% endfor %}
+ </div>
+ <div class="col-sm-12 col-md-6 p-5" >
+<h1>New Category</h1>
+<form action="" method="post">
+        {% csrf_token %}
+    <input type="text" name="name" class="form-control" id="inputAddress2" placeholder="new categorry">
+<br>
+        <button class="btn btn-success ml-2" type="submit">Save</button>
+    </form>
+
+</div>
+
+</section>
+{% endblock content %}

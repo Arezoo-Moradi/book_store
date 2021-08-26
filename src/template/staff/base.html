@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}STAFF{% endblock title %}</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+          crossorigin="anonymous">
+    {% block css%}<link rel="stylesheet" href="../static/Staff/css/base.css">{% endblock css%}
+</head>
+<body>
+     <div class=" container-fluid text-white sticky-top " style="background-color:MediumSeaGreen;">
+    <div class="navbar d-flex flex-wrap py-3 mb-0 justify-content-center justify-content-md-between align-items-center align-items-md-baseline" >
+<!--        <a href="/" class="d-flex mb-3 mb-md-0 text-white text-decoration-none">-->
+<!--        <span >ُsearchbar</span>-->
+<!--      </a>-->
+        <form class="d-flex" method="post" action="{% url 'search' %}">
+            {% csrf_token %}
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input class="form-control me2" type="search" placeholder=" مورد جستجو را وارد کنید" aria-label="search"
+            name="searched" id="autocomplete">
+        </form>
+
+      <ul class=" nav ", style="text-align: right">
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            کتاب
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{%url 'NewBook'%}">تعریف کتاب جدید</a></li>
+            <li><a class="dropdown-item" href="{%url 'list_book'%}">ویرایش کتاب </a></li>
+          </ul>
+        </li>
+             <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            دسته
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{% url 'Category'%}">تعریف دسته جدید</a></li>
+            <li><a class="dropdown-item" href="{% url 'list_cat'%}">ویرایش دسته</a></li>
+          </ul>
+        </li>
+             <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            تخفیف
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{%url 'NewDiscount' %}">تعریف تخفیف جدید</a></li>
+            <li><a class="dropdown-item" href="{%url 'list_discount'%}">ویرایش تخفیف</a></li>
+              <li><a class="dropdown-item" href="{%url 'NewDiscountCode' %}">تعریف کد تخفیف جدید</a></li>
+            <li><a class="dropdown-item" href="{%url 'list_discount_code'%}">ویرایش کد تخفیف</a></li>
+          </ul>
+        </li>
+
+
+      </ul>
+        <p><a href="{% url 'account_logout' %}">خروج</a></p>
+
+    </div>
+  </div>
+    <main>
+    <div class="container">
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+
+</main>
+<!--      <footer class="footer mt-auto py-3" style="margin-top:20px;background-color:#8bc25b">-->
+<!--      <div class="container">-->
+<!--        <p >BOOKSTORE  © 2021</p>-->
+<!--      </div>-->
+
+<!--  </footer>-->
+<!--      {% block js%}-->
+<!--      <script src="../static/Book/JS/main.js"></script>-->
+<!--      {% endblock js%}-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+</body>
+</html>
