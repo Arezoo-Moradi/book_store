@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-ir" dir="rtl">
 {% load static %}
 <head>
     <meta charset="UTF-8">
@@ -18,20 +18,13 @@
 <!--        <a href="/" class="d-flex mb-3 mb-md-0 text-white text-decoration-none">-->
 <!--        <span >ُsearchbar</span>-->
 <!--      </a>-->
-        <form class="d-flex" method="post" action="{% url 'search' %}">
-            {% csrf_token %}
-            <input class="form-control me2" type="search" placeholder="جست و جو" aria-label="search"
-            name="searched" id="autocomplete">
-            <button class="btn btn-outline-secondary" type="submit" id="btnClick">جست و جو</button>
-        </form>
 
-      <ul class=" nav " style="text-align: right">
-          <li>
-              <a class="nav-link" href="{% url 'home'%}"> لیست کتاب ها</a>
-          </li>
+
+      <ul class=" nav ">
+
            <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ادرس
+           <i class="fa fa-address-card fa-2x"  style="color: darkorange" aria-hidden="true"></i>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{%url 'NewAdress'%}">تعریف ادرس جدید</a></li>
@@ -41,7 +34,7 @@
         </li>
              <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                ویرایش پروفایل
+                <i class="fa fa-user-circle fa-2x" style="color: darkorange" aria-hidden="true"></i>
           </a>
                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{%url 'update' user.pk %} ">ویرایش</a></li>
@@ -49,15 +42,23 @@
         </li>
              <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            سفارشات
+            <i class="fa fa-list fa-2x"  style="color: darkorange" aria-hidden="true"></i>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{%url 'order'%}  ">لیست سفارشات</a></li>
           </ul>
         </li>
-
+        <li>
+              <a class="nav-link" href="{% url 'home'%}"><i class="fa fa-book fa-2x" aria-hidden="true" style="color: darkorange"></i></a>
+          </li>
 
       </ul>
+        <form class="d-flex" method="post" action="{% url 'search' %}">
+            {% csrf_token %}
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input class="form-control me2" type="search" placeholder=" مورد جستجو را وارد کنید" aria-label="search"
+            name="searched" id="autocomplete">
+        </form>
     </div>
   </div>
     <main>

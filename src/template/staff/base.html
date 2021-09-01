@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-ir" dir="rtl">
 {% load static %}
 <head>
     <meta charset="UTF-8">
@@ -18,17 +18,13 @@
 <!--        <a href="/" class="d-flex mb-3 mb-md-0 text-white text-decoration-none">-->
 <!--        <span >ُsearchbar</span>-->
 <!--      </a>-->
-        <form class="d-flex" method="post" action="{% url 'search' %}">
-            {% csrf_token %}
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <input class="form-control me2" type="search" placeholder=" مورد جستجو را وارد کنید" aria-label="search"
-            name="searched" id="autocomplete">
-        </form>
-
+         <p><a href="{% url 'account_logout' %}">
+            <i class="fa fa-times fa-2x" aria-hidden="true" style="color: darkviolet"></i>
+        </a></p>
       <ul class=" nav ", style="text-align: right">
            <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            کتاب
+            <i class="fa fa-book fa-2x" aria-hidden="true" style="color: darkviolet"></i>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{%url 'NewBook'%}">تعریف کتاب جدید</a></li>
@@ -37,7 +33,7 @@
         </li>
              <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            دسته
+           <i class="fa fa-university fa-2x" aria-hidden="true" style="color: darkviolet"></i>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{% url 'Category'%}">تعریف دسته جدید</a></li>
@@ -46,7 +42,7 @@
         </li>
              <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            تخفیف
+            <i class="fa fa-calculator fa-2x" aria-hidden="true" style="color: darkviolet"></i>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="{%url 'NewDiscount' %}">تعریف تخفیف جدید</a></li>
@@ -58,9 +54,17 @@
 
 
       </ul>
-        <p><a href="{% url 'account_logout' %}">خروج</a></p>
 
+
+        <form class="d-flex" method="post" action="{% url 'search' %}">
+            {% csrf_token %}
+
+            <input class="form-control me2" type="search" placeholder=" مورد جستجو را وارد کنید" aria-label="search"
+            name="searched" id="autocomplete">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
     </div>
+
   </div>
     <main>
     <div class="container">

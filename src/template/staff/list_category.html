@@ -4,11 +4,12 @@
 <link rel="stylesheet" href="{% static 'Staff/css/base.css'%}">
 {% endblock css%}
 {% block content %}
-      <div>
-          <h1>پر فروش ترین</h1>
-          <div class=" row justify-content-end ">
+      <div >
+          <br>
+          <h2>ویرایش دسته</h2>
+          <div class=" row justify-content-start " >
            {% for cat in object_list %}
-             <div class=" card-header col-2 p-5 m-5" id="box-book" >
+             <div class=" card-header col-2 p-5 m-5" id="box-book" style="background-color:#00ffbf" >
             <a href="{% url 'update_cat' cat.id %}">{{ cat.name |capfirst }}</a>
                  <br>
              </div>

@@ -1,9 +1,10 @@
 {% extends 'staff/base.html' %}
 {% load static%}
 {% block content %}
-<section class="row" style="margin-top:20px">
-<div class="col-sm-12 col-md-6 p-5" >
-<h1>تخفیف جدید</h1>
+<section class="row flex-row-reverse" style="margin-top:20px">
+<div class="col-sm-12 col-md-6 p-5">
+<h1 style="text-align: right">تخفیف جدید</h1>
+        <br>
 <form action="" method="post">{% csrf_token %}
         {{ form.as_p }}
 

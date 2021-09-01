@@ -4,9 +4,11 @@
 <link rel="stylesheet" href="{% static 'Book/css/base.css'%}">
 {% endblock css%}
 {% block content %}
+    <br>
       <div>
+          <br>
           <h1>آدرس</h1>
-          <div class=" row justify-content-end ">
+          <div class=" row justify-content-start ">
            {% for address in addresses %}
              <div class=" card-header col-2 p-5 m-5" id="box-book" >
             <a href="{% url 'update_address' address.pk %}">{{ address.user |capfirst }}</a>

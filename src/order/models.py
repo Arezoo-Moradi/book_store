@@ -16,7 +16,6 @@ class DiscountCode(models.Model):
             amount:        مقدار
     '''
 
-    type = 'امتیازی'
     code = models.CharField(verbose_name='کد تخفیف', max_length=20)
     from_date = models.DateField(verbose_name='از تاریخ')
     to_date = models.DateField(verbose_name=' تا تاریخ')
@@ -43,7 +42,7 @@ class OrderItem(models.Model):
     ordered = models.BooleanField(verbose_name='سفارش', default=False)
     item = models.ForeignKey(Book, on_delete=models.CASCADE)
     quantity = models.IntegerField(verbose_name='موجودی', default=1)
-    user = models.ForeignKey(CustomUser,on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name_plural = 'جزئیات سفارش'

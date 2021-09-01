@@ -40,10 +40,11 @@ class Book(models.Model):
     inventory = models.IntegerField(verbose_name='موجودی')
     created = models.DateTimeField(verbose_name='زمان ایجاد', auto_now_add=True)
     discount_price = models.FloatField(verbose_name='قیمت با تخفیف', blank=True, null=True)
-    category = models.ManyToManyField(Category)
+    category = models.ManyToManyField(Category, verbose_name='دسته')
     slug = models.SlugField(verbose_name='اسلاگ', blank=True)
     image = models.ImageField(verbose_name='تصویر', upload_to='book/', blank=True, null=True)
-    num=models.IntegerField(default=0,blank=True,verbose_name='تعداد فروش')
+    num = models.IntegerField(default=0, blank=True, verbose_name='تعداد فروش')
+
     class Meta:
         verbose_name_plural = 'کتاب ها'
         ordering = ('title',)
@@ -86,9 +87,9 @@ class Discount(models.Model):
     '''
 
     TYPE_CHOICE = [('1', 'درصدی'), ('2', 'نقدی')]
-    type = models.CharField(max_length=20)
-    amount = models.CharField(max_length=20)
-    list_books = models.ManyToManyField(Book, blank=True, related_name='list_books')
+    type = models.CharField(verbose_name='نوع تخفیف', max_length=20)
+    amount = models.CharField(verbose_name='مقدار', max_length=20)
+    list_books = models.ManyToManyField(Book, verbose_name='لیست کتاب ها', blank=True, related_name='list_books')
 
     class Meta:
         verbose_name_plural = 'تخفیف ها'

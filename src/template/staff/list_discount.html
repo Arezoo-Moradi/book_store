@@ -5,9 +5,9 @@
 {% endblock css%}
 {% block content %}
       <div>
-          <div class=" row justify-content-end ">
+          <div class=" row justify-content-start ">
            {% for discount in object_list %}
-             <div class=" card-header col-2 p-5 m-5" id="box-book" >
+             <div class=" card-header col-2 p-5 m-5" id="box-book" style="background-color:#00ffbf">
             <a href="{% url 'update_discount' discount.id %}">{{ discount.type |capfirst }}</a>
                  <br>
                  <p>{{discount.amount}}</p>

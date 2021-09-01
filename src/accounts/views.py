@@ -10,9 +10,11 @@ from order.models import DiscountCode
 from django.db.models import Q
 from .models import *
 from django.urls import reverse_lazy
+from django.contrib.admin.views.decorators import staff_member_required
 
 
-##############################################customer#########################################
+#customer
+
 class ProfileView(TemplateView):
     template_name = 'customer/base.html'
 
@@ -37,7 +39,7 @@ def create_address(request):
 
 
 @login_required()
-def history_orders(request):
+def history_of_orders(request):
     '''
         This function show history of order
     '''
@@ -70,7 +72,7 @@ class AddressEdit(UpdateView):
     success_url = reverse_lazy('profile')
 
 
-def list_address(request):
+def list_of_address(request):
     '''
         This function show list of address
     '''
@@ -79,17 +81,18 @@ def list_address(request):
     context = {'addresses': address}
     return render(request, 'customer/list_address.html', context)
 
+
 def delete_address(request, pk):
     '''
         This function delete a address
     '''
 
-    Address.objects.filter(user=request.user,pk=pk).delete()
+    Address.objects.filter(user=request.user, pk=pk).delete()
     return redirect("addresses")
 
 
-################################################################Staff###################################################
-from django.contrib.admin.views.decorators import staff_member_required
+#Staff
+
 @staff_member_required()
 def index(request):
     return render(request, 'staff/base.html', {})
@@ -281,5 +284,4 @@ def delete_discount_code(request, pk):
     return redirect("list_discount_code")
 
 
-###############################user
 

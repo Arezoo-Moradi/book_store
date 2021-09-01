@@ -12,8 +12,9 @@ admin.site.register(Category)
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     list_display = ('title', 'author', 'price', 'inventory', 'discount_price')
-    search_fields = ['title','author']
+    search_fields = ['title', 'author']
     list_filter = ("title", "author", "inventory")
+    list_editable = ['price', 'inventory']
 
 
 @admin.register(Discount)

@@ -12,40 +12,53 @@
     <h2>لیست خرید </h2>
         <br>
         <br>
+
+        <div style="text-align: right">
+            <form class="d-flex" method="post" action="{% url 'Complete' %}">
+            {% csrf_token %}
+            <input class="form-control me2" type="search" placeholder="کد تخفیف را وارد کنید..." aria-label="search"
+            name="code" id="autocomplete">
+            <button class="btn btn-outline-secondary" type="submit" id="btnClick">اعمال تخفیف</button>
+        </form>
+        </div>
+        <br>
+        <br>
+        <br>
     <table class="table">
         <thead>
         <tr>
-            <th scope="col">وضعیت</th>
-            <th scope="col">قیمت با تخفیف</th>
-            <th scope="col">تعداد</th>
-            <th scope="col">قیمت</th>
             <th scope="col">عنوان کتاب</th>
+            <th scope="col">قیمت</th>
+            <th scope="col">تعداد</th>
+            <th scope="col">قیمت با تخفیف</th>
+            <th scope="col">وضعیت</th>
+
+
+
+
         </tr>
         </thead>
         <tbody>
 
         <tr>
-            <td>{{status}}</td>
-            <td >{{ discount }}
+
+
             </td>
-            <td>{{quantity}}</td>
-            <td>{{ total }}</td>
             <td>{{ order }}</td>
+            <td>{{ total }}</td>
+            <td>{{quantity}}</td>
+            <td >{{ discount }}
+            <td>{{status}}</td>
 
         </tr>
 
         </tbody>
     </table>
         <br>
-            <form class="d-flex" method="post" action="{% url 'Complete' %}">
-            {% csrf_token %}
-            <input class="form-control me2" type="search" placeholder="code" aria-label="search"
-            name="code" id="autocomplete">
-            <button class="btn btn-outline-secondary" type="submit" id="btnClick">اعمال تخفیف</button>
-        </form>
-        <br>
-        <a class='btn btn-primary float-right' id="ordritembtn" href="{% url 'CH-ADD' %}"
+        <div style="text-align: left">
+            <a class='btn btn-primary float-right' id="ordritembtn" href="{% url 'CH-ADD' %}"
         style="text-align:left">تعیین ادرس </a>
+        </div>
 
     </div>
 

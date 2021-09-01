@@ -22,7 +22,7 @@ class AddressAdmin(admin.ModelAdmin):
 
 
 admin.site.register(CustomUser, CustomUserAdmin)
-# admin.site.register(Address)
+
 
 
 

@@ -2,20 +2,23 @@
 {% block title %}CATEGORIES{% endblock title %}
 {% block content %}
 <section class="row" style="margin-top:20px">
-<div class="col-sm-12 col-md-6 p-5" >
-<h4>Categories</h4>
+<div class="col-sm-12 col-md-6 p-5" style="text-align: right">
+<h4 style="text-align: right">دسته ها</h4>
+    <br>
 {% for category in category_list1 %}
 <div class="card">
-    <div class="card-header">
+    <div class="card-header" style="text-align: right">
 
     <li><a href="#">{{ category.name }}</a></li>
     </div>
     </div>
 {% endfor %}
-<h4>Categories with no task</h4>
+   <br>
+<h4 style="text-align: right">دسته بدون کتاب</h4>
+    <br>
 {% for category in category_list0 %}
-<div class="card">
-    <div class="card-header">
+<div class="card" style="text-align: right">
+    <div class="card-header" style="text-align: right">
 
     <li><a href="#">{{ category.name }}</a></li>
     </div>
@@ -23,12 +26,13 @@
 {% endfor %}
  </div>
  <div class="col-sm-12 col-md-6 p-5" >
-<h1>New Category</h1>
+<h1 style="text-align: right">دسته جدید</h1>
+     <br>
 <form action="" method="post">
         {% csrf_token %}
-    <input type="text" name="name" class="form-control" id="inputAddress2" placeholder="new categorry">
+    <input type="text" name="name" class="form-control" id="inputAddress2" style="text-align: right" placeholder="...اسم دسته جدید را وارد کنید">
 <br>
-        <button class="btn btn-success ml-2" type="submit">Save</button>
+        <button class="btn btn-success ml-2" type="submit">افزودن دسته جدید</button>
     </form>
 
 </div>

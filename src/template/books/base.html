@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-ir" dir="rtl">
 {% load static %}
 <head>
     <meta charset="UTF-8">
@@ -17,27 +17,36 @@
 <!--        <a href="/" class="d-flex mb-3 mb-md-0 text-white text-decoration-none">-->
 <!--        <span >ُsearchbar</span>-->
 <!--      </a>-->
-        <form class="d-flex" method="post" action="{% url 'search' %}">
-          {% csrf_token %}
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <input class="form-control me2" type="search" placeholder=" مورد جستجو را وارد کنید" aria-label="search"
-            name="searched" id="autocomplete">
-        </form>
+
 
       <ul class=" nav ">
-          <li> <a class="nav-link" href="{% url 'books'%}"> لیست کتاب ها</a></li>
-        <li class="nav-item"><a href="{% url 'order-summary' %}" class="nav-link "aria-current="page"><i class="fas fa-shopping-cart ml-2 " style="color:red"></i></a></li>
-        <li class="nav-item"><a href="{%url 'profile'%}" class="nav-link">حساب کاربری</a></li>
-        {% if user.is_authenticated %}
+<!--          <li> <a class="nav-link" href="{% url 'books'%}"> لیست کتاب ها</a></li>-->
+          <li class="nav-item">فروشگاه کتاب</a><hr></li>
+          {% if user.is_authenticated %}
           سلام!{{ user.email }}
-          <p><a href="{% url 'account_logout' %}">خروج</a></p>
-        {% else %}
-          <p>You are not logged in</p>
+          <p><a href="{% url 'account_logout' %}"><i class="fa fa-times" aria-hidden="true" style="color: darkblue"></i></a></p>
+<!--          <p><a href="{% url 'account_logout' %}"><i class="fa fa-sign-in fa-2x" aria-hidden="true" style="color: darkorange"></i></a></p>-->
+         {% else %}
+          <p>شما هنوز وارد نشده اید!</p>
           <a href="{% url 'account_login' %}">ورود</a> |
-          <a href="{% url 'account_signup' %}">ثبت نام</a>
+<!--          <a href="{% url 'account_signup' %}">ثبت نام</a>-->
+          <a href="{% url 'account_signup' %}"><i class="fa fa-user-plus" aria-hidden="true"></i></a>
         {% endif %}
-        <li class="nav-item">فروشگاه کتاب</a><hr></li>
+           <li class="nav-item"><a href="{%url 'profile'%}" class="nav-link"><i class="fa fa-user-circle fa-2x" aria-hidden="true" style="color: dimgray"></i></a></li>
+                  <li class="nav-item"><a href="{% url 'order-summary' %}" class="nav-link "aria-current="page"><i class="fas fa-shopping-cart ml-2 fa-1x" style="color:red"></i></a></li>
+          <li> <a class="nav-link" href="{% url 'books'%}"><i class="fa fa-book fa-2x" aria-hidden="true" style="color: darkorange"></i></a></li>
+
+<!--        <li class="nav-item"><a href="{%url 'profile'%}" class="nav-link">حساب کاربری</a></li>-->
+
       </ul>
+
+        <form class="d-flex" method="post" action="{% url 'search' %}">
+          {% csrf_token %}
+
+            <input class="form-control me2" type="search" placeholder=" مورد جستجو را وارد کنید" aria-label="search"
+            name="searched" id="autocomplete">
+             <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
     </div>
   </div>
     <main>

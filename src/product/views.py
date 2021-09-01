@@ -36,22 +36,22 @@ def search_bar(request):
         return render(request, 'books/search_bar.html', context)
 
 
-def most_sell_book(request):
+def best_sellers(request):
     '''
             This function, displaying bestsellers book
     '''
-    dic_book={}
-    most_book=[]
-    books=Book.objects.all()
+
+    dic_book = {}
+    best_sell_book = []
+    books = Book.objects.all()
     for book in books:
-        dic_book[book.title]=book.num
-    dic_book=dict(sorted(dic_book.items(), key=lambda item: item[1],reverse=True))
-    f=list(dic_book.keys())
-    for i in range(2):
-        b=Book.objects.filter(title=f[i])
-        most_book.append(b[0])
-    print(most_book)
-    return render(request, 'books/index.html', {'title': most_book})
+        dic_book[book.title] = book.num
+    dic_book = dict(sorted(dic_book.items(), key=lambda item: item[1], reverse=True))
+    f = list(dic_book.keys())
+    for i in range(3):
+        b = Book.objects.filter(title=f[i])
+        best_sell_book.append(b[0])
+    return render(request, 'books/index.html', {'title': best_sell_book})
 
 
 

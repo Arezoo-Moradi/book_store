@@ -15,7 +15,7 @@ from django.views.generic.edit import UpdateView
 from django.urls import reverse_lazy
 
 
-class OrderSummaryView(LoginRequiredMixin, View):
+class SummaryOfOrderView(LoginRequiredMixin, View):
     '''
         Summary of order
     '''
@@ -35,9 +35,9 @@ class OrderSummaryView(LoginRequiredMixin, View):
 
 
 @login_required
-def add_to_cart(request, slug):
+def add_to_shopping(request, slug):
     '''
-        This function, add item to shopping basket(cart)
+        This function, add item to shopping basket
     '''
     item = get_object_or_404(Book, slug=slug)
 
@@ -79,9 +79,9 @@ def add_to_cart(request, slug):
 
 
 @login_required
-def remove_from_cart(request, slug):
+def remove_of_shopping(request, slug):
     '''
-        This function, remove item from shopping basket(cart)
+        This function, remove item from shopping basket
     '''
     item = get_object_or_404(Book, slug=slug)
     order_qs = Order.objects.filter(
@@ -110,9 +110,9 @@ def remove_from_cart(request, slug):
 
 
 @login_required
-def remove_single_item_from_cart(request, slug):
+def remove_item_shopping(request, slug):
     '''
-        This function, remove item using the mark -  from shopping basket(cart)
+        This function, remove item using the mark -  from shopping basket
     '''
 
     item = get_object_or_404(Book, slug=slug)
@@ -144,7 +144,7 @@ def remove_single_item_from_cart(request, slug):
         return redirect("product", slug=slug)
 
 
-def order_list(request):
+def list_of_order(request):
     '''
         This function, return list of order
     '''
@@ -168,6 +168,7 @@ def order_list(request):
             final = code1[0].to_date
             if first < today < final:
                 total_discount = order[0].get_total(code1[0])
+
             else:
                 messages.warning(request, 'نا معتبر ')
         else:
@@ -186,11 +187,11 @@ def order_list(request):
     return render(request, 'order/orderlist.html', context)
 
 
-
-def choice_address(request):
+def show_address(request):
     '''
         This function show the page of address
     '''
+
     if request.method == "POST":
         province = request.POST.get('province')
         city = request.POST.get('city')
@@ -204,29 +205,29 @@ def choice_address(request):
     return render(request, 'order/address.html', context)
 
 
-def choice_address_2(request, pk):
-    '''
-        This function could add new address or chose old address
-    '''
+def add_new_address(request, pk):
+        '''
+            This function could add new address or chose old address
+        '''
 
-    order = Order.objects.filter(user=request.user, status=False)
-    ord = Order.objects.get(id=order[0].id)
-    ord.inventory_book()
-    items = ord.items.all()
-    for item in items:
-        item.ordered = True
-        item.save()
-    total = order[0].total_price
-    time = order[0].ordered_date
-    id = order[0].pk
-    add = Address.objects.filter(user=request.user, pk=pk)
-    ord.address = add[0]
-    ord.status = True
-    status = True
-    address = add[0]
-    ord.save()
+        order = Order.objects.filter(user=request.user, status=False)
+        ord = Order.objects.get(id=order[0].id)
+        ord.inventory_book()
+        items = ord.items.all()
+        for item in items:
+            item.ordered = True
+            item.save()
+        total = order[0].total_price
+        time = order[0].ordered_date
+        id = order[0].pk
+        add = Address.objects.filter(user=request.user, pk=pk)
+        ord.address = add[0]
+        ord.status = True
+        status = True
+        address = add[0]
+        ord.save()
 
-    context = {'order': id, 'address': address, 'total': total,
-               'status': status, 'time': time}
+        context = {'order': id, 'address': address, 'total': total,
+                   'status': status, 'time': time}
 
-    return render(request, 'order/finalrecord.html', context)
+        return render(request, 'order/finalrecord.html', context)

@@ -1,7 +1,20 @@
-<h2>ورود</h2>
-<form method="post">
+{% extends "books/base.html" %}
+{% load static %}
+{% block css%}
+<link rel="stylesheet" href="{% static 'Book/css/base.css'%}">
+{% endblock css%}
+{% block content %}
+<br>
+<h2 style="text-align: right">ورود</h2>
+<br>
+<form method="post" style="text-align: right">
   {% csrf_token %}
   {{ form.as_p }}
-  <button type="submit">ورود</button>
+  <button type="submit" style="background-color: #19865C">ورود</button>
 </form>
 <a href="{%url 'account_reset_password'%}">فراموشی رمز عبور</a>
+
+{% endblock content %}
+{% block js%}
+      <script src="{% static 'Book/JS/main.js'%}"></script>
+{% endblock js%}

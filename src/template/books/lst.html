@@ -5,8 +5,9 @@
 {% endblock css%}
 {% block content %}
       <div>
-          <h1>پر فروش ترین</h1>
-          <div class=" row justify-content-end ">
+          <br>
+          <h2> کتاب </h2>
+          <div class=" row justify-content-start ">
            {% for book in object_list %}
              <div class=" card-header col-2 p-5 m-5" id="box-book" >
             <a href="{% url 'book_detail' book.slug %}">{{ book.title |capfirst }}</a>

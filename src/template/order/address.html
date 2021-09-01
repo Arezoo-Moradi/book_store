@@ -2,8 +2,9 @@
 {% block title %}ADDRESS{% endblock title %}
 {% block content %}
 <section class="row" style="margin-top:20px">
-<div class="col-sm-12 col-md-6 p-5" >
-<h4>Categories</h4>
+<div class="col-sm-12 col-md-6 p-5" style="text-align: right" >
+<h4>آدرس های موجود</h4>
+    <br>
 {% for add in addresses %}
 <div class="card">
     <div class="card-header">
@@ -16,17 +17,22 @@
     </div>
 {% endfor %}
  </div>
- <div class="col-sm-12 col-md-6 p-5" >
-<h1>New Address</h1>
-<form action="{%url 'record' 1  %}" method="post">
-        {% csrf_token %}
-    <input type="text" name="province" class="form-control" id="inputAddress1" placeholder="province">
-    <input type="text" name="city" class="form-control" id="inputAddress2" placeholder="city">
-    <input type="text" name="postal_code" class="form-control" id="inputAddress3" placeholder="postal_code">
-    <input type="text" name="full_address" class="form-control" id="inputAddress4" placeholder="full_address">
-<br>
-        <button class="btn btn-success ml-2" type="submit">Save</button>
-    </form>
+ <div class="col-sm-12 col-md-6 p-5" style="text-align: right">
+    <h2>آدرس جدید</h2>
+     <br>
+    <form action="" method="post">
+            {% csrf_token %}
+        <input type="text" name="province" class="form-control" id="inputAddress1" style="text-align: right" placeholder="...استان را وارد کنید">
+        <input type="text" name="city" class="form-control" id="inputAddress2" style="text-align: right" placeholder=" ...شهرستان را وارد کنید">
+        <input type="text" name="postal_code" class="form-control" id="inputAddress3" style="text-align: right" placeholder="...کد پستی را وارد کنید">
+        <input type="text" name="full_address" class="form-control" id="inputAddress4" style="text-align: right" placeholder="...آدرس کامل را وارد کنید">
+        <br>
+        <br>
+            <div style="text-align: left">
+                <button class="btn btn-success ml-2" type="submit">افزودن آدرس</button>
+            </div>
+
+        </form>
 
 </div>
 
