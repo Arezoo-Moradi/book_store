@@ -3,44 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cbc839f8-96ff-49dc-99ec-db335ff412f7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/accounts/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/accounts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/book_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/book_store/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/order/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/account/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/account/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/books/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/books/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/books/book-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/books/book-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/books/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/books/lst.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/books/lst.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/books/order_items.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/books/order_items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/books/search_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/books/search_bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/customer/address_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/customer/address_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/customer/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/customer/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/customer/edit_profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/customer/edit_profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/customer/list_address.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/customer/list_address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/order/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/order/address.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/order/finalrecord.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/order/finalrecord.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/order/orderlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/order/orderlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/staff/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/staff/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/staff/book_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/staff/book_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/staff/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/staff/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/staff/discount_code_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/staff/discount_code_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/staff/discount_new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/staff/discount_new.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/staff/list_book.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/staff/list_book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/staff/list_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/staff/list_category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/staff/list_discount.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/staff/list_discount.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/staff/list_discount_code.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/staff/list_discount_code.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +95,20 @@
       <workItem from="1630315560790" duration="23280000" />
       <workItem from="1630392969331" duration="11973000" />
       <workItem from="1630493940410" duration="7613000" />
-      <workItem from="1630504412509" duration="344000" />
+      <workItem from="1630504412509" duration="781000" />
+      <workItem from="1630567021033" duration="8038000" />
+      <workItem from="1630695137430" duration="2111000" />
+      <workItem from="1630755251111" duration="312000" />
+      <workItem from="1630901841358" duration="610000" />
+      <workItem from="1630989233943" duration="1393000" />
+      <workItem from="1631086235530" duration="627000" />
+      <workItem from="1631284282780" duration="74000" />
+      <workItem from="1631530613869" duration="1203000" />
+      <workItem from="1637699958224" duration="646000" />
+      <workItem from="1638387473377" duration="994000" />
+      <workItem from="1639683320810" duration="772000" />
+      <workItem from="1639686618862" duration="73000" />
+      <workItem from="1640029613227" duration="795000" />
     </task>
     <task id="LOCAL-00001" summary="second commit">
       <created>1628705308593</created>
@@ -184,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630001855216</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="six commit">
+      <created>1630504811454</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1630504811454</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +177,7 @@
     <MESSAGE value="thired commit" />
     <MESSAGE value="four commit" />
     <MESSAGE value="five commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="five commit" />
+    <MESSAGE value="six commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="six commit" />
   </component>
 </project>
